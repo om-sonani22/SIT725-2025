@@ -1,0 +1,37 @@
+/* Custom CSS for Simple Materialize App */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f4f4; /* Light grey background */
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto; /* Ensures main content takes available space */
+    padding-top: 20px; /* Add some padding at the top */
+}
+
+.rounded-corners {
+    border-radius: 8px; /* Apply rounded corners to elements */
+    overflow: hidden; /* Ensures content respects border-radius */
+}
+
+.card {
+    border-radius: 8px; /* Apply rounded corners to Materialize cards */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift card on hover */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Enhanced shadow on hover */
+}
+
+/* Responsive adjustments for smaller screens */
+@media only screen and (max-width: 600px) {
+    .brand-logo {
+        font-size: 1.5rem; /* Adjust logo size on small screens */
+    }
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="light-blue darken-4">
+            <div class="nav-wrapper container">
+                <a href="#" class="brand-logo center">My Simple App</a>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container section">
+        <div class="row">
+            <div class="col s12 m8 offset-m2">
+                <div class="card hoverable rounded-corners">
+                    <div class="card-content">
+                        <span class="card-title light-blue-text text-darken-4 center-align">Contact Us</span>
+                        <div class="row">
+                            <form id="contact-form" class="col s12">
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="name" type="text" class="validate" required>
+                                        <label for="name">Name</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="email" type="email" class="validate" required>
+                                        <label for="email">Email</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <textarea id="message" class="materialize-textarea validate" required></textarea>
+                                        <label for="message">Message</label>
+                                    </div>
+                                </div>
+                                <div class="row center-align">
+                                    <button class="btn waves-effect waves-light light-blue darken-2 rounded-corners" type="submit" name="action">Submit
+                                        <i class="material-icons right">send</i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section to display submitted contacts -->
+        <div class="row">
+            <div class="col s12 m8 offset-m2">
+                <h5 class="light-blue-text text-darken-4 center-align">Submitted Contacts</h5>
+                <ul id="contacts-list" class="collection with-header">
+                    <li class="collection-header"><h4>Recent Submissions</h4></li>
+                    <li class="collection-item">No contacts submitted yet.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer class="page-footer light-blue darken-4">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Simple Materialize App</h5>
+                    <p class="grey-text text-lighten-4">Built with Node.js and Materialize CSS.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Quick Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#">Privacy Policy</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+            © 2025 Om Sonani. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Custom JavaScript for form submission and data display -->
+    <script src="contact.js"></script>
+</body>
+</html>
